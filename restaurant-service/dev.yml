@@ -1,8 +1,14 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *
+
 # Specifies your Active Directory ID:
-azure.activedirectory.tenant-id=4675797b-3a63-4c13-8ab3-1ba08ff829d0
-# Specifies your App Registration's Application ID:
-azure.activedirectory.client-id=d2b516eb-31b8-4206-8620-4eae4d08b55f
-# Specifies your App Registration's secret key:
-azure.activedirectory.client-secret=0r0l6.dsRR~~reaW1WR6k67tRo~X.7_xPO
-# Specifies the list of Active Directory groups to use for authorization:
-azure.activedirectory.user-group.allowed-groups=restaurant
+azure:
+  activedirectory:
+    tenant-id: 4675797b-3a63-4c13-8ab3-1ba08ff829d0
+    client-id: d2b516eb-31b8-4206-8620-4eae4d08b55f
+    client-secret: 0r0l6.dsRR~~reaW1WR6k67tRo~X.7_xPO
+    user-group:
+      allowed-groups: restaurant
